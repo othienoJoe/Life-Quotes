@@ -9,14 +9,18 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
 
   quotes:Quote[] = [
-    {id:1, name:'Abraham Lincoln', description:''},
-    {id:2, name:'Abraham Lincoln', description:''},
-    {id:3, name:'Abraham Lincoln', description:''},
-    {id:4, name:'Abraham Lincoln', description:''},
-    {id:5, name:'Abraham Lincoln', description:''},
-    {id:6, name:'Abraham Lincoln', description:''},
-    {id:7, name:'Abraham Lincoln', description:''},
+    new Quote(1, 'Abraham Lincoln', ''),
+    new Quote(2, 'Abraham Lincoln', ''),
+    new Quote(3, 'Abraham Lincoln', ''),
+    new Quote(4, 'Abraham Lincoln', ''),
+    new Quote(5, 'Abraham Lincoln', ''),
+    new Quote(6, 'Abraham Lincoln', ''),
+    new Quote(7, 'Abraham Lincoln', ''),
   ];
+
+  toggleDetails(index:any) {
+    this.quotes[index].showDescription = !this.quotes[index].showDescription;
+  }
 
   constructor() { }
 
