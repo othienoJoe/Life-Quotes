@@ -9,7 +9,7 @@ import { Quote } from '../quote';
 })
 export class QuoteDetailComponent implements OnInit {
 
-  @Input() quote: any;
+  @Input() quoty!: Quote;
   @Output() isRead = new EventEmitter<boolean>();
 
   deleteQuote(read:boolean) {
