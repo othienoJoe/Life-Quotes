@@ -10,14 +10,20 @@ import { Quote } from '../quote';
 export class QuoteDetailComponent implements OnInit {
 
   @Input() quote: any;
-  @Output() isComplete = new EventEmitter<boolean>();
+  @Output() isRead = new EventEmitter<boolean>();
 
-  quoteComplete(complete:boolean) {
-    this.isComplete.emit(complete);
+  deleteQuote(read:boolean) {
+    this.isRead.emit(read);
+  }
+  upvote() {
+    this.quoty.likes+=1;
+  }
+  downvote() {
+    this.quoty.dislikes+=1;
   }
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
 
 }
