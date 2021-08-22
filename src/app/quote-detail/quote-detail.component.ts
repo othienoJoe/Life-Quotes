@@ -9,7 +9,7 @@ import { Quote } from '../quote';
 })
 export class QuoteDetailComponent implements OnInit {
 
-  @Input() quote: Quote | undefined;
+  @Input() quote: any;
   @Output() isComplete = new EventEmitter<boolean>();
 
   quoteComplete(complete:boolean) {
@@ -17,7 +17,7 @@ export class QuoteDetailComponent implements OnInit {
   }
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
 
 }
