@@ -1,10 +1,2 @@
-<div>
-  <h1>Daily Quotes</h1>
-  <ul>
-    <li *ngFor='let quote of quotes'>
-      {{quote.name}}
-    </li>
-  </ul>
-  <p *ngIf='quotes.length > 6'>Your quotes are too many</p>
-</div>
-<!-- <app-goal></app-goal> -->
+<router-outlet></router-outlet>
+<app-quote></app-quote>
