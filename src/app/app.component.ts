@@ -7,12 +7,12 @@ import { Quote } from './quote';
 })
 export class AppComponent {
   quotes:Quote[] = [
-    {id:1, name:'Abraham Lincoln'},
-    {id:2, name:'Abraham Lincoln'},
-    {id:3, name:'Abraham Lincoln'},
-    {id:4, name:'Abraham Lincoln'},
-    {id:5, name:'Abraham Lincoln'},
-    {id:6, name:'Abraham Lincoln'},
-    {id:7, name:'Abraham Lincoln'},
+    {id:1, name:'Abraham Lincoln', description:''},
+    {id:2, name:'Abraham Lincoln', description:''},
+    {id:3, name:'Abraham Lincoln', description:''},
+    {id:4, name:'Abraham Lincoln', description:''},
+    {id:5, name:'Abraham Lincoln', description:''},
+    {id:6, name:'Abraham Lincoln', description:''},
+    {id:7, name:'Abraham Lincoln', description:''},
   ];
 }
