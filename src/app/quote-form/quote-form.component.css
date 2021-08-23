@@ -1,4 +1,12 @@
+.container-fluid {
+  background-color: rgba(85, 107, 47, 0.425);
+  margin-left: 20em;
+}
 #add {
   color: rgb(17, 0, 255);
+  text-align: center;
+}
+#button {
+  margin-top: 5px;
   text-align: center;
 }

@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container-fluid .justify-content-center">
   <h2 class="heading" id="add">Add Quote</h2>
   <!-- <hr> -->
   <form (ngSubmit)='addQuote() ;quotesForm.resetForm({})' #quotesForm='ngForm'>
@@ -26,10 +26,11 @@
       <div class="form-group">
         <label for="name">Quote Author</label>
         <input type="text" required class="form-control" id="author"[(ngModel)]="quoted.author" name="author" #author='ngModel'>
-        <div *ngIf="title.invalid && title.dirty" class="alert alert-danger">
+        <div *ngIf="title.invalid && title.
+        dirty" class="alert alert-danger">
           <p>Author Name is required.</p>
         </div>
       </div>
-      <button type="submit" class="btn btn-sm btn-success">Add Quote</button>
+      <button type="submit" class="btn btn-sm btn-success" id="button">Add Quote</button>
   </form>
 </div>
