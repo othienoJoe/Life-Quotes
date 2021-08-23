@@ -1,4 +1,3 @@
-
 export class Quote {
   showInfo: boolean;
   completeDate!: Date;
