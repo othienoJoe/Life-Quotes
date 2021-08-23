@@ -8,7 +8,7 @@ export class QuoteHighlighterDirective {
 
   constructor(private elem:ElementRef) {
   }
-  @HostListener("click") onclicks() {
+  @HostListener("click") onclick() {
     this.textDecoration("gold")
   }
 
