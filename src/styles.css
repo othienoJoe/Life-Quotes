@@ -1,3 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~bootstrap/dist/css/bootstrap.css"
+@import "~bootstrap/dist/css/bootstrap.css";
 
+body{
+  background-image: url("./assets/Inspire.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+/*===================================================*/
+.copyright {
+	text-align: center;
+	background-color: aquamarine;
+	height: 2em;
+}
+.copyright span {
+	color: red;
+	font-weight: 1000;
+	font-size: 20px;
+}
